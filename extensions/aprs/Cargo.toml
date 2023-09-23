@@ -1,0 +1,12 @@
+[package]
+name = "gd-aprs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+aprs = { version = "0.1.0", path = "../../../../Rust/FlightLogR/aprs" }
+chrono = "0.4.31"
+godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
