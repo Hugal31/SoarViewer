@@ -1,0 +1,446 @@
+[gd_scene load_steps=3 format=3 uid="uid://ir78lemkmlo0"]
+
+[ext_resource type="PackedScene" uid="uid://dto1ngm72qs5" path="res://assets/models/ask21/ask21.glb" id="1_8rg8b"]
+[ext_resource type="Script" path="res://models/gliders/ask_21.gd" id="2_2fhr0"]
+
+[node name="Ask21" instance=ExtResource("1_8rg8b")]
+script = ExtResource("2_2fhr0")
+
+[node name="Skeleton3D" parent="Ask21" index="0"]
+bones/1/rotation = Quaternion(8.57815e-09, -2.17949e-07, -0.1709, 0.985288)
+bones/5/rotation = Quaternion(-0.0317174, 0.711493, 0.665596, 0.223055)
+bones/7/rotation = Quaternion(-0.66469, 0.220508, 0.0365265, 0.712902)
+
+[node name="helice_helice_mesh" parent="Ask21/Skeleton3D" index="0"]
+transform = Transform3D(0.992549, 2.13638e-07, -0.121849, -0.121849, -1.53002e-07, -0.992549, -1.44159e-07, 1, -1.97588e-07, 0.139, 0.954827, 1.16895e-07)
+bone_idx = 3
+
+[node name="moteur_moteur_mesh" parent="Ask21/Skeleton3D" index="1"]
+transform = Transform3D(0.992549, 1.09982e-08, -0.121849, -0.121849, -1.85987e-07, -0.992549, -3.24786e-08, 1, -1.839e-07, 0.139, 0.954828, 1.16895e-07)
+bone_idx = 4
+
+[node name="porteD_porteD_mesh" parent="Ask21/Skeleton3D" index="2"]
+transform = Transform3D(0.0574297, 0.992725, -0.105822, 0.993846, -0.0467921, 0.100401, 0.0947193, -0.110937, -0.989303, -0.0499754, 1.0602, -0.0542959)
+bone_idx = 6
+
+[node name="porteG_porteG_mesh" parent="Ask21/Skeleton3D" index="3"]
+transform = Transform3D(0.0530924, -0.993298, -0.102666, 0.994313, 0.0430801, 0.097395, -0.0923194, -0.107253, 0.989936, -0.0483718, 1.06116, 0.0524078)
+bone_idx = 8
+
+[node name="aileronD_aileronD_mesh" parent="Ask21/Skeleton3D" index="4"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 9
+
+[node name="aileronG_aileronG_mesh" parent="Ask21/Skeleton3D" index="5"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 10
+
+[node name="ailes_ailes_mesh" parent="Ask21/Skeleton3D" index="6"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 11
+
+[node name="ailesL0_ailesL0_mesh" parent="Ask21/Skeleton3D" index="7"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 12
+
+[node name="ailesL1_ailesL1_mesh" parent="Ask21/Skeleton3D" index="8"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 13
+
+[node name="ailesL2_ailesL2_mesh" parent="Ask21/Skeleton3D" index="9"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 14
+
+[node name="ailesR0_ailesR0_mesh" parent="Ask21/Skeleton3D" index="10"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 15
+
+[node name="ailesR1_ailesR1_mesh" parent="Ask21/Skeleton3D" index="11"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 16
+
+[node name="ailesR2_ailesR2_mesh" parent="Ask21/Skeleton3D" index="12"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 17
+
+[node name="alt-face-press_alt-face-press_mesh" parent="Ask21/Skeleton3D" index="13"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 18
+
+[node name="alt-face_alt-face_mesh" parent="Ask21/Skeleton3D" index="14"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 19
+
+[node name="audio-switch_audio-switch_mesh" parent="Ask21/Skeleton3D" index="15"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 20
+
+[node name="ball_ball_mesh" parent="Ask21/Skeleton3D" index="16"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 21
+
+[node name="Ch_colon_Ch_colon_mesh" parent="Ask21/Skeleton3D" index="17"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 22
+
+[node name="Ch_EThr1_Ch_EThr1_mesh" parent="Ask21/Skeleton3D" index="18"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 23
+
+[node name="Ch_EThr2_Ch_EThr2_mesh" parent="Ask21/Skeleton3D" index="19"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 24
+
+[node name="Ch_ETmn1_Ch_ETmn1_mesh" parent="Ask21/Skeleton3D" index="20"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 25
+
+[node name="Ch_ETmn2_Ch_ETmn2_mesh" parent="Ask21/Skeleton3D" index="21"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 26
+
+[node name="Ch_hr1_Ch_hr1_mesh" parent="Ask21/Skeleton3D" index="22"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 27
+
+[node name="Ch_hr2_Ch_hr2_mesh" parent="Ask21/Skeleton3D" index="23"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 28
+
+[node name="Ch_mn1_Ch_mn1_mesh" parent="Ask21/Skeleton3D" index="24"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 29
+
+[node name="Ch_mn2_Ch_mn2_mesh" parent="Ask21/Skeleton3D" index="25"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 30
+
+[node name="Ch_sc1_Ch_sc1_mesh" parent="Ask21/Skeleton3D" index="26"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 31
+
+[node name="Ch_sc2_Ch_sc2_mesh" parent="Ask21/Skeleton3D" index="27"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 32
+
+[node name="Chrono_control_Chrono_control_mesh" parent="Ask21/Skeleton3D" index="28"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 33
+
+[node name="Chrono_dim_Chrono_dim_mesh" parent="Ask21/Skeleton3D" index="29"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 34
+
+[node name="Chrono_lcd_Chrono_lcd_mesh" parent="Ask21/Skeleton3D" index="30"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 35
+
+[node name="Chrono_select_Chrono_select_mesh" parent="Ask21/Skeleton3D" index="31"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 36
+
+[node name="Chronometer_Chronometer_mesh" parent="Ask21/Skeleton3D" index="32"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 37
+
+[node name="Compass_Compass_mesh" parent="Ask21/Skeleton3D" index="33"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 38
+
+[node name="decimals-digit_decimals-digit_mesh" parent="Ask21/Skeleton3D" index="34"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 39
+
+[node name="derive_derive_mesh" parent="Ask21/Skeleton3D" index="35"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 40
+
+[node name="direction_direction_mesh" parent="Ask21/Skeleton3D" index="36"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 41
+
+[node name="dot-digit_dot-digit_mesh" parent="Ask21/Skeleton3D" index="37"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 42
+
+[node name="face_001_face_mesh_001" parent="Ask21/Skeleton3D" index="38"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 43
+
+[node name="face_002_face_mesh_002" parent="Ask21/Skeleton3D" index="39"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 44
+
+[node name="face_003_face_mesh_003" parent="Ask21/Skeleton3D" index="40"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 45
+
+[node name="Face2_Face2_mesh" parent="Ask21/Skeleton3D" index="41"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 46
+
+[node name="Face_Face_mesh" parent="Ask21/Skeleton3D" index="42"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 47
+
+[node name="face_face_mesh" parent="Ask21/Skeleton3D" index="43"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 48
+
+[node name="flaps_flaps_mesh" parent="Ask21/Skeleton3D" index="44"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 49
+
+[node name="fond_001_fond_mesh_001" parent="Ask21/Skeleton3D" index="45"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 50
+
+[node name="fond_002_fond_mesh_002" parent="Ask21/Skeleton3D" index="46"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 51
+
+[node name="fond_003_fond_mesh_003" parent="Ask21/Skeleton3D" index="47"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 52
+
+[node name="fond_fond_mesh" parent="Ask21/Skeleton3D" index="48"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 53
+
+[node name="fuselage_fuselage_mesh" parent="Ask21/Skeleton3D" index="49"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 54
+
+[node name="interieur2_interieur2_mesh" parent="Ask21/Skeleton3D" index="50"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 55
+
+[node name="interieur_interieur_mesh" parent="Ask21/Skeleton3D" index="51"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 56
+
+[node name="introues_introues_mesh" parent="Ask21/Skeleton3D" index="52"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 57
+
+[node name="inttour2_inttour2_mesh" parent="Ask21/Skeleton3D" index="53"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 58
+
+[node name="inttour_inttour_mesh" parent="Ask21/Skeleton3D" index="54"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 59
+
+[node name="knob_001_knob_mesh_001" parent="Ask21/Skeleton3D" index="55"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 60
+
+[node name="knob_002_knob_mesh_002" parent="Ask21/Skeleton3D" index="56"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 61
+
+[node name="knob_knob_mesh" parent="Ask21/Skeleton3D" index="57"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 62
+
+[node name="mc-cready_001_mc-cready_mesh_001" parent="Ask21/Skeleton3D" index="58"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 63
+
+[node name="mc-cready_mc-cready_mesh" parent="Ask21/Skeleton3D" index="59"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 64
+
+[node name="mode-switch_mode-switch_mesh" parent="Ask21/Skeleton3D" index="60"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 65
+
+[node name="needle-km_needle-km_mesh" parent="Ask21/Skeleton3D" index="61"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 66
+
+[node name="needle-m_needle-m_mesh" parent="Ask21/Skeleton3D" index="62"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 67
+
+[node name="Needle_001_Needle_mesh_001" parent="Ask21/Skeleton3D" index="63"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 68
+
+[node name="needle_001_needle_mesh_001" parent="Ask21/Skeleton3D" index="64"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 69
+
+[node name="needle_needle_mesh" parent="Ask21/Skeleton3D" index="65"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 70
+
+[node name="Needle_Needle_mesh" parent="Ask21/Skeleton3D" index="66"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 71
+
+[node name="panel1" parent="Ask21/Skeleton3D" index="67"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 72
+
+[node name="panel2_panel2_mesh" parent="Ask21/Skeleton3D" index="68"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 73
+
+[node name="panel3_panel3_mesh" parent="Ask21/Skeleton3D" index="69"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 74
+
+[node name="planchet_planchet_mesh" parent="Ask21/Skeleton3D" index="70"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 75
+
+[node name="profondeur_profondeur_mesh" parent="Ask21/Skeleton3D" index="71"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 76
+
+[node name="ring_ring_mesh" parent="Ask21/Skeleton3D" index="72"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 77
+
+[node name="roueA_roueA_mesh" parent="Ask21/Skeleton3D" index="73"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 78
+
+[node name="roueB_roueB_mesh" parent="Ask21/Skeleton3D" index="74"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 79
+
+[node name="roueC_roueC_mesh" parent="Ask21/Skeleton3D" index="75"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 80
+
+[node name="screws_001_screws_mesh_001" parent="Ask21/Skeleton3D" index="76"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 81
+
+[node name="screws_screws_mesh" parent="Ask21/Skeleton3D" index="77"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 82
+
+[node name="sens-switch_sens-switch_mesh" parent="Ask21/Skeleton3D" index="78"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 83
+
+[node name="sign-digit_sign-digit_mesh" parent="Ask21/Skeleton3D" index="79"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 84
+
+[node name="spoilerD_spoilerD_mesh" parent="Ask21/Skeleton3D" index="80"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 85
+
+[node name="spoilerG_spoilerG_mesh" parent="Ask21/Skeleton3D" index="81"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 86
+
+[node name="string1_string1_mesh" parent="Ask21/Skeleton3D" index="82"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 87
+
+[node name="string2_string2_mesh" parent="Ask21/Skeleton3D" index="83"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 88
+
+[node name="string3_string3_mesh" parent="Ask21/Skeleton3D" index="84"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 89
+
+[node name="string4_string4_mesh" parent="Ask21/Skeleton3D" index="85"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 90
+
+[node name="string5_string5_mesh" parent="Ask21/Skeleton3D" index="86"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 91
+
+[node name="tape_tape_mesh" parent="Ask21/Skeleton3D" index="87"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 92
+
+[node name="tourvitreA_tourvitreA_mesh" parent="Ask21/Skeleton3D" index="88"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 93
+
+[node name="tourvitreB_tourvitreB_mesh" parent="Ask21/Skeleton3D" index="89"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 94
+
+[node name="trousaileronD_trousaileronD_mesh" parent="Ask21/Skeleton3D" index="90"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 95
+
+[node name="trousaileronG_trousaileronG_mesh" parent="Ask21/Skeleton3D" index="91"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 96
+
+[node name="trousspoilerD_trousspoilerD_mesh" parent="Ask21/Skeleton3D" index="92"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 97
+
+[node name="trousspoilerG_trousspoilerG_mesh" parent="Ask21/Skeleton3D" index="93"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 98
+
+[node name="units-digit_units-digit_mesh" parent="Ask21/Skeleton3D" index="94"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 99
+
+[node name="visses_visses_mesh" parent="Ask21/Skeleton3D" index="95"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 100
+
+[node name="vitre_001_vitre_mesh_001" parent="Ask21/Skeleton3D" index="96"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 101
+
+[node name="vitre_002_vitre_mesh_002" parent="Ask21/Skeleton3D" index="97"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 102
+
+[node name="vitre_003_vitre_mesh_003" parent="Ask21/Skeleton3D" index="98"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 103
+
+[node name="vitre_004_vitre_mesh_004" parent="Ask21/Skeleton3D" index="99"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 104
+
+[node name="vitre_005_vitre_mesh_005" parent="Ask21/Skeleton3D" index="100"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 105
+
+[node name="vitre_vitre_mesh" parent="Ask21/Skeleton3D" index="101"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 106
+
+[node name="vitreA_vitreA_mesh" parent="Ask21/Skeleton3D" index="102"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 107
+
+[node name="vitreB_vitreB_mesh" parent="Ask21/Skeleton3D" index="103"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 108
+
+[node name="vol-knob_vol-knob_mesh" parent="Ask21/Skeleton3D" index="104"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 109
+
+[node name="yoke_yoke_mesh" parent="Ask21/Skeleton3D" index="105"]
+transform = Transform3D(-2.32784e-14, -1.2816e-07, 1, 1, 1.06064e-07, -5.96047e-08, -4.25409e-08, 1, 8.62904e-08, -0.393137, 1.08352, 1.014e-07)
+bone_idx = 110
+
+[node name="Label3D" type="Label3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.870215, 0)
+pixel_size = 0.001
+billboard = 1
+double_sided = false
+fixed_size = true
+alpha_antialiasing_mode = 2
+text = "ASK 21"
+uppercase = true

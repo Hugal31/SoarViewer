@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://de6p2lil3iacn"]
+[gd_scene load_steps=4 format=3 uid="uid://de6p2lil3iacn"]
 
-[ext_resource type="Script" path="res://scripts/test_aprs.gd" id="1_58tnt"]
+[ext_resource type="PackedScene" uid="uid://ir78lemkmlo0" path="res://models/gliders/ask_21.tscn" id="2_oangl"]
+[ext_resource type="Script" path="res://scripts/airplane_spawner.gd" id="4_jlwmi"]
+[ext_resource type="Script" path="res://scripts/aprs_reader.gd" id="5_ws8vx"]
 
 [node name="Node" type="Node"]
-script = ExtResource("1_58tnt")
+
+[node name="AirplaneSpawner" type="Node" parent="." node_paths=PackedStringArray("aprs_source")]
+script = ExtResource("4_jlwmi")
+aprs_source = NodePath("../AprsReader")
+airplane_model = ExtResource("2_oangl")
+
+[node name="AprsReader" type="Node" parent="."]
+script = ExtResource("5_ws8vx")
+file_path = "res://assets/misc/aprs-tg-landing-2-230902.txt"
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.922417, 0.386196, 0, -0.386196, 0.922417, -0.753711, 9.40158, 16.0181)

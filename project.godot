@@ -14,3 +14,7 @@ config/name="Soar Viewer"
 run/main_scene="res://scenes/test_aprs.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+OgnDdb="*res://scripts/ogn_ddb.gd"

@@ -6,11 +6,16 @@ class_name OgnDDB
 var database_file = "user://ogd_ddb.csv"
 var devices = {}
 var request
+var _is_database_available = false
 
-signal database_available()
+signal database_ready()
 
 func get_device(id: String) -> Device:
 	return devices.get(id.substr(2))
+
+
+func is_database_available():
+	return _is_database_available
 
 
 func _ready():
@@ -47,6 +52,7 @@ func _load_file(path):
 		elif not record.is_empty():
 			push_warning("Could not parse DDB line: \"%s\"" % line)
 
+	_is_database_available = true
 	emit_signal("database_available")
 
 

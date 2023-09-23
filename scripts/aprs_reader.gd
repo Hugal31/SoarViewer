@@ -2,20 +2,24 @@ extends Node
 
 class_name AprsReader
 
+@export_file("*.txt") var file_path: String
+@export var discard_old = true
+
 var file: FileAccess
 var next_report: AprsPositionReport
 var date_to_tick_difference: float = 0
 var timer = Timer.new()
-var discard_old = true
 
 signal position_report(report: AprsPositionReport)
 
-func _init(file_path):
+func _ready():
 	file = FileAccess.open(file_path, FileAccess.READ)
 	next_report = self.get_next_report()
 	timer.one_shot = true
 	timer.connect("timeout", emit_next_report)
 	add_child(timer)
+
+	simulate_reception()
 
 func simulate_reception():
 	if next_report == null:
@@ -37,7 +41,7 @@ func emit_next_report():
 			break
 
 func get_next_report() -> AprsPositionReport:
-	while !file.eof_reached():
+	while file and !file.eof_reached():
 		var line = file.get_line()
 		if not line.is_empty() and not line.begins_with('#'):
 			var report = Aprs.parse_aprs(line)
