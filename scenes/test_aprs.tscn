@@ -10,6 +10,7 @@
 script = ExtResource("4_jlwmi")
 aprs_source = NodePath("../AprsReader")
 airplane_model = ExtResource("2_oangl")
+filtered_ids = PackedStringArray("06DDAC8D")
 
 [node name="AprsReader" type="Node" parent="."]
 script = ExtResource("5_ws8vx")
@@ -17,3 +18,6 @@ file_path = "res://assets/misc/aprs-tg-landing-2-230902.txt"
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.922417, 0.386196, 0, -0.386196, 0.922417, -0.753711, 9.40158, 16.0181)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 47.9239, 0)

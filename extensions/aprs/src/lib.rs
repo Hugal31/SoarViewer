@@ -77,6 +77,15 @@ impl AprsPositionReport {
         self.inner.altitude().unwrap_or(std::f64::NAN)
     }
 
+    /// Turn rate in 180deg/min, clockwise.
+    #[func]
+    pub fn turn_rate(&self) -> f32 {
+        self.inner
+            .turn_rate()
+            .map(|t| t as f32)
+            .unwrap_or(std::f32::NAN)
+    }
+
     #[func]
     fn symbol(&self) -> GodotString {
         // Safety: the symbol is garanteed to be ASCII chars, as per the parser.
